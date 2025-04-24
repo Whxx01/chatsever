@@ -157,7 +157,7 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
     }
     else
     {
-        // 该用户不存在，用户存在但是密码错误，登录失败
+        // 该用户不存在，用户存在但是密码错误，登录失败//
         json response;
         response["msgid"] = LOGIN_MSG_ACK;
         response["errno"] = 1;
